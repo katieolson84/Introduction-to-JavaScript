@@ -200,9 +200,13 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(x){
+  let factor = 0.621371;
+  let miles = x * factor;{
+    return miles
   }
+  }
+   console.log(miles(1));
 
 
 
@@ -214,9 +218,14 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(x){
+    let factor = 30.48;
+    let feet = x * factor;{
+      return feet
+    }
   }
+  console.log(feet(1));
+
  
 
 
@@ -230,8 +239,11 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(countdown){
+        // let bottles = count(100);
+        //  return count - 1.localString; s
+          
+
   }
 
 
@@ -250,9 +262,27 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(score){
+  let outcome;
+  if (score > 90){
+    outcome= "you got an A";
   }
+  if (score > 80 && score < 90){
+    outcome= "you got a B";
+  }
+  if (score > 70 && score < 80){
+    outcome= "you got a C";
+  }
+  if (score > 60 && score <70){
+    outcome= "you got a D";
+  }
+  if (score <60){
+    outcome= " you got a F";
+  }
+    return outcome;
+  }
+console.log(grade(100));
+
   
   
   
