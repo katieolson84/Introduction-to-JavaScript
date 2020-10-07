@@ -162,28 +162,27 @@ Use the game function below to do the following:
 */
 
 function game(userChoice){
-  let computerChoice= Math.floor(Math.random()*3) +1;
+  let computerChoice= Math.round(Math.random()*3)+1;
   let outcome;
-  if (computerChoice === 3 || computerChoice >2){
+  if (computerChoice <= 1){
     outcome= "rock";
   }
-  if (computerChoice === 2 || computerChoice >1 && computerChoice <3){
+  if (computerChoice <= 2){
     outcome= "paper";
   }
-  if (computerChoice === 1 || computerChoice < 2){
+  else{
     outcome= "scissors";
   }
-  if (outcome === "rock" && userChoice === "scissors" || outcome === "paper" && userChoice === "rock"|| outcome === "scissors" && userChoice === "paper"){
-    return "you lose!";
-  }
-  if (outcome === "paper" && userChoice === "scissors"|| outcome=== "rock" && userChoice === "paper" || outcome === "scissors" && userChoice === "rock"){
+  if (userChoice === "rock" && outcome=== "scissors" || userChoice === "paper" && outcome === "rock"|| userChoice === "scissors" && outcome === "paper"){
     return "you win!";
   }
-  if (outcome === "paper" && userChoice === "paper"|| outcome=== "rock" && userChoice === "rock" || outcome === "scissors" && userChoice === "scissors"){
+  if (userChoice === "paper" && outcome === "scissors"|| userChoice=== "rock" && outcome === "paper" || userChoice === "scissors" && outcome === "rock"){
+    return "you lose!";}
+  else{
     return "it's a tie";
   }
 }
-console.log(game("rock"));
+console.log(game('paper'));
 
 
   
@@ -201,8 +200,8 @@ Using the miles function below do the following:
 */
 
 function miles(x){
-  let factor = 0.621371;
-  let miles = x * factor;{
+  const factor = 0.621371;
+  const miles = x * factor;{
     return miles
   }
   }
@@ -219,8 +218,8 @@ Using the feet function below do the following:
 */
 
 function feet(x){
-    let factor = 30.48;
-    let feet = x * factor;{
+    const factor = 30.48;
+    const feet = x / factor;{
       return feet
     }
   }
@@ -239,12 +238,12 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(countdown){
-        for(let i= 100; i > 100; i--){
-          return "(i) bottles of soda on the wall, (i) bottles of soda, take one down pass it around, (i) bottles of soda on the wall"
-        }
-  }
-console.log(i);
+// function annoyingSong(countdown){
+//         for(let i= 100; i > 100; i--){
+//           return "(i) bottles of soda on the wall, (i) bottles of soda, take one down pass it around, (i) bottles of soda on the wall"
+//         }
+//   }
+// console.log(i);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -300,9 +299,9 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
+// function vowelCounter(/*add your code here*/) {
+//     /*add your code here*/
+// }
 
 
 
