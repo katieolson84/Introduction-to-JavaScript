@@ -160,13 +160,14 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-let computerChoice= Math.round(Math.random()*3)+1;
+
 function game(userChoice){
+  let computerChoice= Math.round(Math.random()*3)+1;
   let outcome;
-  if (computerChoice <= 1){
+  if (computerChoice == 1){
     outcome= "rock";
   }
-  if (computerChoice <= 2){
+  if (computerChoice == 2){
     outcome= "paper";
   }
   else{
@@ -181,7 +182,7 @@ function game(userChoice){
     return "it's a tie";
   }
 }
-console.log(game('paper', computerChoice));
+console.log(game('paper')
 
 
   
@@ -197,16 +198,13 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
-
 function miles(x){
   const factor = 0.621371;
-  const miles = x * factor;{
-    return miles
+  const distance = x * factor;{
+    return distance
   }
   }
-   console.log(miles(1));
-
-
+    console.log(miles(1));
 
 //Task 5b - Feet to CM
 /*
