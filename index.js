@@ -18,7 +18,10 @@ Do the following:
    HINT: no function required
 */
 
-
+let votingAge = 18;
+let i = 20;
+if (i > 18){
+    console.log('true');}
 
 /*
 Task 1b - Values
@@ -31,9 +34,12 @@ Do the following:
    HINT: no function required
 */
 
+let one = 2;
+let two = 5;
 
-
-
+if(one < two){
+  console.log(one='purple')
+}
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -45,9 +51,11 @@ Do the following:
 
    HINT: look up the Number method
 */
+let x;
+x = "1999";
+x = 1999;
 
-
-
+console.log(x)
 
 /*
 Task 1d - Multiply
@@ -75,11 +83,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(Years){
+  let dogYears = Years * 7;
+  let humanYears = 1
+  return humanYears * dogYears;
 }
-
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -108,9 +116,34 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+  function hungryDog(weight, age){
+  
+    if(weight > 4 || weight === 5 && age > 1){
+      return ${weight} * .05;}
+    
+    if(weight > 5 && weight <11 && age > 1){
+      return ${weight} * .04;}
+    
+    if(weight > 10 || weight < 16 weight && age >= 1){
+      return ${weight}* .03;}
+    
+    if(weight > 15 && age > 1){
+       return ${weight} * .02;}
+    
+    if(age < 1 && > .50){
+      return ${weight} * .04;}
+    
+    if(age < 1 && > .33){
+      return ${weight} * .05;}
+    
+    if(age < 1 && > .17){
+      return ${weight} * .1;}
   }
+  console.log(hungryDog(15,1))
+
+
+  
+ 
 
 
 
@@ -128,9 +161,11 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
-    /*add your code here*/
-}
+function game(weight, age){
+    if(weight <= 5 && age =1 ){
+      return(weight * .05)
+    }
+
   
   
 
