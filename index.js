@@ -116,30 +116,30 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-  function hungryDog(weight, age){
+function hungryDog(weight, age){
   
-    if(weight > 4 || weight === 5 && age > 1){
-      return ${weight} * .05;}
-    
-    if(weight > 5 && weight <11 && age > 1){
-      return ${weight} * .04;}
-    
-    if(weight > 10 || weight < 16 weight && age >= 1){
-      return ${weight}* .03;}
-    
-    if(weight > 15 && age > 1){
-       return ${weight} * .02;}
-    
-    if(age < 1 && > .50){
-      return ${weight} * .04;}
-    
-    if(age < 1 && > .33){
-      return ${weight} * .05;}
-    
-    if(age < 1 && > .17){
-      return ${weight} * .1;}
-  }
-  console.log(hungryDog(15,1))
+  if(weight > 4 && weight <5 || weight === 5 && age > 1){
+    return weight * 0.05;}
+  
+  if(weight > 5 && weight < 11 && age > 1){
+    return weight * 0.04;}
+  
+  if(weight > 10 || weight < 16 && age >= 1){
+    return weight * 0.03;}
+  
+  if(weight > 16 && age > 1){
+     return weight * 0.02;}
+  
+  if(age < 1 && age > 0.50){
+    return weight * 0.04;}
+  
+  if(age < 1 && age >0.33){
+    return weight * 0.05;}
+  
+  if(age < 1 && age >0.17){
+    return weight * 0.1;}
+}
+console.log(hungryDog(15,1))
 
 
   
@@ -161,10 +161,10 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(weight, age){
-    if(weight <= 5 && age =1 ){
-      return(weight * .05)
-    }
+function game( ){
+
+}
+
 
   
   
