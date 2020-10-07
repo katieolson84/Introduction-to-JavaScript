@@ -160,9 +160,8 @@ Use the game function below to do the following:
   
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
-
+let computerChoice= Math.round(Math.random()*3)+1;
 function game(userChoice){
-  let computerChoice= Math.round(Math.random()*3)+1;
   let outcome;
   if (computerChoice <= 1){
     outcome= "rock";
@@ -182,7 +181,7 @@ function game(userChoice){
     return "it's a tie";
   }
 }
-console.log(game('paper'));
+console.log(game('paper', computerChoice));
 
 
   
@@ -238,12 +237,13 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-// function annoyingSong(countdown){
-//         for(let i= 100; i > 100; i--){
-//           return "(i) bottles of soda on the wall, (i) bottles of soda, take one down pass it around, (i) bottles of soda on the wall"
-//         }
-//   }
-// console.log(i);
+function annoyingSong(countdown){
+  let count = 100;
+  while (count > 0) {
+      console.log(count);
+      count -=1;
+  }
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -299,9 +299,9 @@ Using the vowelCounter function below do the following:
 */
 
 
-// function vowelCounter(/*add your code here*/) {
-//     /*add your code here*/
-// }
+function vowelCounter(/*add your code here*/) {
+    /*add your code here*/
+}
 
 
 
