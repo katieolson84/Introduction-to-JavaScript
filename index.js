@@ -240,12 +240,11 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(countdown){
-        // let bottles = count(100);
-        //  return count - 1.localString; s
-          
-
+        for(let i= 100; i > 100; i--){
+          return "(i) bottles of soda on the wall, (i) bottles of soda, take one down pass it around, (i) bottles of soda on the wall"
+        }
   }
-
+console.log(i);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
