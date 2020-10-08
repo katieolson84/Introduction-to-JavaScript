@@ -20,8 +20,9 @@ Do the following:
 
 let votingAge = 18;
 let i = 20;
-if (i > 18){
-    console.log('true');}
+if (i > votingAge){
+    console.log('true');
+  }
 
 /*
 Task 1b - Values
@@ -38,7 +39,7 @@ let one = 2;
 let two = 5;
 
 if(one < two){
-  console.log(one='purple')
+  console.log(one='purple');
 }
 
 /*
@@ -55,7 +56,7 @@ let x;
 x = "1999";
 x = 1999;
 
-console.log(x)
+console.log(x);
 
 /*
 Task 1d - Multiply
@@ -119,27 +120,34 @@ Use the hungryDog function and feeding requirements below to do the following:
 function hungryDog(weight, age){
   
   if(weight > 4 && weight <5 || weight === 5 && age > 1){
-    return weight * 0.05;}
+    return weight * 0.05;
+  }
   
   if(weight > 5 && weight < 11 && age > 1){
-    return weight * 0.04;}
+    return weight * 0.04;
+  }
   
   if(weight > 10 || weight < 16 && age >= 1){
-    return weight * 0.03;}
+    return weight * 0.03;
+  }
   
   if(weight > 16 && age > 1){
-     return weight * 0.02;}
+     return weight * 0.02;
+    }
   
   if(age < 1 && age > 0.50){
-    return weight * 0.04;}
+    return weight * 0.04;
+  }
   
   if(age < 1 && age >0.33){
-    return weight * 0.05;}
+    return weight * 0.05;
+  }
   
   if(age < 1 && age >0.17){
-    return weight * 0.1;}
+    return weight * 0.1;
+  }
 }
-console.log(hungryDog(15,1))
+console.log(hungryDog(15,1));
 
 
   
@@ -164,29 +172,27 @@ Use the game function below to do the following:
 function game(userChoice){
   let computerChoice= Math.round(Math.random()*3)+1;
   let outcome;
-  if (computerChoice == 1){
+  if (computerChoice <= 1){
     outcome= "rock";
   }
-  if (computerChoice == 2){
+  if (computerChoice === 2){
     outcome= "paper";
   }
-  else{
+  if(computerChoice === 3){
     outcome= "scissors";
   }
+
   if (userChoice === "rock" && outcome=== "scissors" || userChoice === "paper" && outcome === "rock"|| userChoice === "scissors" && outcome === "paper"){
     return "you win!";
   }
   if (userChoice === "paper" && outcome === "scissors"|| userChoice=== "rock" && outcome === "paper" || userChoice === "scissors" && outcome === "rock"){
-    return "you lose!";}
+    return "you lose!";
+  }
   else{
     return "it's a tie";
   }
 }
-console.log(game('paper')
-
-
-  
-  
+console.log(game('paper'));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -198,13 +204,14 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles
   3. Return the number of miles
 */
+
 function miles(x){
-  const factor = 0.621371;
-  const distance = x * factor;{
-    return distance
+    const factor = 0.621371;
+    const distance = x * factor;{
+      return distance;
+    }
   }
-  }
-    console.log(miles(1));
+console.log(miles(1));
 
 //Task 5b - Feet to CM
 /*
@@ -217,12 +224,10 @@ Using the feet function below do the following:
 function feet(x){
     const factor = 30.48;
     const feet = x / factor;{
-      return feet
+      return feet;
     }
   }
   console.log(feet(1));
-
- 
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -235,13 +240,11 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(countdown){
-  let count = 100;
-  while (count > 0) {
-      console.log(count);
-      count -=1;
-  }
+function annoyingSong(a){
+  let bottle= a-1;
+  return a  + ` bottles of soda on the wall, ` + a + ` bottles of soda, take one down pass it around ` + bottle + ` bottles of soda on the wall`;
 }
+console.log(annoyingSong(100));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -259,23 +262,23 @@ Using the grade function below do the following:
 */
   
 function grade(score){
-  let outcome;
-  if (score > 90){
-    outcome= "you got an A";
-  }
-  if (score > 80 && score < 90){
-    outcome= "you got a B";
-  }
-  if (score > 70 && score < 80){
-    outcome= "you got a C";
-  }
-  if (score > 60 && score <70){
-    outcome= "you got a D";
-  }
-  if (score <60){
-    outcome= " you got a F";
-  }
-    return outcome;
+    let outcome;
+    if (score > 90){
+      outcome= "you got an A";
+    }
+    if (score > 80 && score < 90){
+      outcome= "you got a B";
+    }
+    if (score > 70 && score < 80){
+      outcome= "you got a C";
+    }
+    if (score > 60 && score <70){
+      outcome= "you got a D";
+    }
+    if (score <60){
+      outcome= " you got a F";
+    }
+      return outcome;
   }
 console.log(grade(100));
 
@@ -297,9 +300,9 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
-}
+// function vowelCounter(/*add your code here*/) {
+//     /*add your code here*/
+// }
 
 
 
